@@ -1,0 +1,1 @@
+window.resizeTo((window.outerWidth - window.innerWidth) + 640, (window.outerHeight - window.innerHeight) + 360);

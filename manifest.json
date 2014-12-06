@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Popout Plus for YouTube™",
+	"description": "Allows you to popout a video from your feed or from recommended sidebar.",
+	"version": "0.1.10",
+	
+	"content_scripts": [
+		{ "matches": ["*://www.youtube.com/embed/*"]
+		,	"js": ["youtube/popout_resizer.js"]
+		, "run_at": "document_start" },
+		{ "matches": ["*://www.youtube.com/*"]
+		, "exclude_matches": ["*://www.youtube.com/embed/*"]
+		, "js": ["common/jquery.min.js", "youtube/popout.js"]
+		, "css": ["youtube/popout.css"]
+		, "run_at": "document_end" }
+	],
+	
+	"background": {
+		"scripts": ["youtube/background.js"],
+		"persistent": false
+	},
+	
+	"web_accessible_resources": [
+		"icon16.png"
+	],
+	
+	"permissions": [
+		"contextMenus"
+	],
+	
+	"icons": {
+		"16": "icon16.png",
+		"32": "icon32.png",
+		"64": "icon64.png"
+	}
+}
