@@ -1,0 +1,14 @@
+.pop-thumb-btn {
+	width: 28px;
+	height: 22px !important;
+}
+
+.pop-thumb-btn:before {
+	content: ' ';
+	background: no-repeat url('chrome-extension://__MSG_@@extension_id__/icon16.png') !important;
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: relative;
+	right: 4px;
+}

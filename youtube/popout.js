@@ -35,7 +35,7 @@
 		btn.type = "button";
 		btn.role = "button";
 		btn.setAttribute("data-tooltip-text", "Popout");
-		btn.innerHTML = '<span class="pp-button-content"><img src="' + chrome.extension.getURL("icon16.png") + '" alt="Popout"></span>';
+		//btn.innerHTML = '<span class="pp-button-content"><img src="' + chrome.extension.getURL("icon16.png") + '" alt="Popout"></span>';
 		
 		btn.style.right = "26px";
 		

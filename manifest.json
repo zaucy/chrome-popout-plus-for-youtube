@@ -3,7 +3,7 @@
 	
 	"name": "Popout Plus for YouTube™",
 	"description": "Allows you to popout a video from your feed or from recommended sidebar.",
-	"version": "0.1.10",
+	"version": "0.1.11",
 	
 	"content_scripts": [
 		{ "matches": ["*://www.youtube.com/embed/*"]
@@ -26,7 +26,8 @@
 	],
 	
 	"permissions": [
-		"contextMenus"
+		"contextMenus",
+		"tabs"
 	],
 	
 	"icons": {
