@@ -1,14 +1,22 @@
 .pop-thumb-btn {
-	width: 28px;
+	width: 28px !important;
 	height: 22px !important;
+	position: relative;
 }
 
 .pop-thumb-btn:before {
 	content: ' ';
 	background: no-repeat url('chrome-extension://__MSG_@@extension_id__/icon16.png') !important;
-	width: 16px;
-	height: 16px;
+	width: 16px !important;
+	height: 16px !important;
 	display: block;
 	position: relative;
-	right: 4px;
+}
+
+.contains-pplus > .pop-thumb-btn {
+	display: none;
+}
+
+.contains-pplus:hover > .pop-thumb-btn {
+	display: block;
 }

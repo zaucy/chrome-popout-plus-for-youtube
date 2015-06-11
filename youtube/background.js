@@ -24,9 +24,9 @@ chrome.runtime.onMessage.addListener(function(data) {
 					if(tabId == tab.id) {
 						
 						if(changeInfo.url) {
-							if(changeInfo.url.indexOf("youtube.com/watch?v=") > -1) {
-								var url = changeInfo.url.replace("watch?v=", "embed/");
-								url = url.replace("&", "?");
+							if(changeInfo.url.indexOf("youtube.com/watch?v=") > -1 && changeInfo.url.indexOf("&ytpp") == -1) {
+								var url = changeInfo.url + "&ytpp=true";
+								//url = url.replace("&", "?");
 								chrome.tabs.update(tab.id, {url: url});
 							}
 						}
